@@ -48,10 +48,12 @@ export default function Layout({ children }: { children: ReactNode }) {
       >
         <nav className="container flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[oklch(0.72_0.14_200)] to-[oklch(0.82_0.12_85)] flex items-center justify-center text-white font-bold text-sm tracking-tight shadow-md">
-              U
-            </div>
+          <Link href="/" className="flex items-center gap-2 group">
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663334155394/AR88J74jigHbmcaUVraJD8/unima-logo-transparent_2f3b836d.png"
+              alt="Unima Inc. - 凱渥科技"
+              className="h-8 lg:h-9 w-auto"
+            />
             <div className="flex flex-col leading-tight">
               <span className="text-white font-semibold text-sm tracking-wide">凱渥科技</span>
               <span className="text-[oklch(0.72_0.14_200)] text-[10px] tracking-widest uppercase">Unima Inc.</span>
@@ -146,9 +148,11 @@ export default function Layout({ children }: { children: ReactNode }) {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[oklch(0.72_0.14_200)] to-[oklch(0.82_0.12_85)] flex items-center justify-center text-white font-bold text-sm">
-                  U
-                </div>
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663334155394/AR88J74jigHbmcaUVraJD8/unima-logo-transparent_2f3b836d.png"
+                  alt="Unima Inc. - 凱渥科技"
+                  className="h-10 w-auto"
+                />
                 <div>
                   <div className="text-white font-semibold text-sm">凱渥科技有限公司</div>
                   <div className="text-[oklch(0.72_0.14_200)] text-xs tracking-wider">Unima Inc.</div>
