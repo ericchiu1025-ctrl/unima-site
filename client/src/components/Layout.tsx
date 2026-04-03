@@ -177,7 +177,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <Instagram size={16} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/eric-chiu/"
+                  href="https://www.linkedin.com/in/eric-chiu-50507056/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[oklch(0.72_0.14_200)] transition-colors duration-300"

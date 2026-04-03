@@ -27,7 +27,7 @@ const contactInfo = [
 const socialLinks = [
   { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/eric.chiu.121" },
   { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/eric_chiu_chiu/" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/eric-chiu/" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/eric-chiu-50507056/" },
 ];
 
 export default function Contact() {
