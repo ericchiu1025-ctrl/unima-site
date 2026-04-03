@@ -4,7 +4,7 @@
  */
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Clock, ArrowRight, Tag } from "lucide-react";
+import { Clock, ArrowRight, Tag, ExternalLink } from "lucide-react";
 
 const BLOG_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663334155394/AR88J74jigHbmcaUVraJD8/blog-header-kvxUqtyCYFAutnouFdZYxu.webp";
 
@@ -19,8 +19,19 @@ const fade = {
 
 const posts = [
   {
+    slug: "manager-today-erp-to-ai-leader",
+    title: "從ERP顧問到AI領導者！凱渥科技如何用 AI 重塾決策節奏，帶領團隊走向策略升級之路",
+    excerpt: "經理人月刊專題報導——凱渥科技總經理丘中岳分享如何從 ERP 領域深耕多年的資深專家，透過《AI決策領導力課程》找到新定錨，確立成為「台灣中小企業的麥肯錫」的新願景，利用 AI 賦能協助台灣隱形冠軍走向國際。",
+    date: "2025-12-20",
+    readTime: "10 分鐘",
+    tags: ["經理人月刊", "AI 領導力", "數位轉型"],
+    featured: true,
+    externalUrl: "https://www.managertoday.com.tw/articles/view/71391",
+  },
+  {
     slug: "ai-reshaping-sme-decisions",
     title: "AI 如何改寫中小企業決策？從數據分析到智慧預測的實戰指南",
+    externalUrl: undefined as string | undefined,
     excerpt: "生成式 AI 正在重新定義企業決策的方式。本文深入探討中小企業如何導入 AI 決策工具，從數據收集、分析到智慧預測，建立數據導向的決策文化，提升競爭力。",
     date: "2026-03-15",
     readTime: "8 分鐘",
@@ -118,35 +129,73 @@ export default function Blog() {
                 viewport={{ once: true }}
                 variants={fade}
               >
-                <Link href={`/blog/${post.slug}`}>
-                  <article className="group bg-white rounded-xl border border-[oklch(0.92_0.01_250)] shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden h-full glow-card">
-                    <div className="h-2 bg-gradient-to-r from-[oklch(0.72_0.14_200)] to-[oklch(0.82_0.12_85)]" />
-                    <div className="p-7">
-                      <div className="flex items-center gap-3 text-xs text-[oklch(0.5_0.03_250)] mb-3">
-                        <span>{post.date}</span>
-                        <span className="flex items-center gap-1">
-                          <Clock size={12} />
-                          {post.readTime}
+                {post.externalUrl ? (
+                  <a href={post.externalUrl} target="_blank" rel="noopener noreferrer">
+                    <article className="group bg-white rounded-xl border border-[oklch(0.92_0.01_250)] shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden h-full glow-card">
+                      <div className="h-2 bg-gradient-to-r from-[oklch(0.82_0.12_85)] to-[oklch(0.72_0.14_200)]" />
+                      <div className="p-7">
+                        <div className="flex items-center justify-between mb-3">
+                          <div className="flex items-center gap-3 text-xs text-[oklch(0.5_0.03_250)]">
+                            <span>{post.date}</span>
+                            <span className="flex items-center gap-1">
+                              <Clock size={12} />
+                              {post.readTime}
+                            </span>
+                          </div>
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[oklch(0.82_0.12_85/0.15)] text-[oklch(0.6_0.12_85)]">
+                            <ExternalLink size={10} />
+                            媒體報導
+                          </span>
+                        </div>
+                        <h3 className="text-xl font-bold text-[oklch(0.18_0.04_250)] mb-3 group-hover:text-[oklch(0.72_0.14_200)] transition-colors duration-300" style={{ fontFamily: "'Noto Serif TC', serif" }}>
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-[oklch(0.5_0.03_250)] leading-relaxed mb-4">{post.excerpt}</p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {post.tags.map((tag) => (
+                            <span key={tag} className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[oklch(0.72_0.14_200/0.08)] text-[oklch(0.55_0.12_200)]">
+                              <Tag size={10} />
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                        <span className="inline-flex items-center gap-1 text-sm font-medium text-[oklch(0.72_0.14_200)] group-hover:gap-2 transition-all duration-300">
+                          閱讀原文 <ExternalLink size={14} />
                         </span>
                       </div>
-                      <h3 className="text-xl font-bold text-[oklch(0.18_0.04_250)] mb-3 group-hover:text-[oklch(0.72_0.14_200)] transition-colors duration-300" style={{ fontFamily: "'Noto Serif TC', serif" }}>
-                        {post.title}
-                      </h3>
-                      <p className="text-sm text-[oklch(0.5_0.03_250)] leading-relaxed mb-4">{post.excerpt}</p>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {post.tags.map((tag) => (
-                          <span key={tag} className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[oklch(0.72_0.14_200/0.08)] text-[oklch(0.55_0.12_200)]">
-                            <Tag size={10} />
-                            {tag}
+                    </article>
+                  </a>
+                ) : (
+                  <Link href={`/blog/${post.slug}`}>
+                    <article className="group bg-white rounded-xl border border-[oklch(0.92_0.01_250)] shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden h-full glow-card">
+                      <div className="h-2 bg-gradient-to-r from-[oklch(0.72_0.14_200)] to-[oklch(0.82_0.12_85)]" />
+                      <div className="p-7">
+                        <div className="flex items-center gap-3 text-xs text-[oklch(0.5_0.03_250)] mb-3">
+                          <span>{post.date}</span>
+                          <span className="flex items-center gap-1">
+                            <Clock size={12} />
+                            {post.readTime}
                           </span>
-                        ))}
+                        </div>
+                        <h3 className="text-xl font-bold text-[oklch(0.18_0.04_250)] mb-3 group-hover:text-[oklch(0.72_0.14_200)] transition-colors duration-300" style={{ fontFamily: "'Noto Serif TC', serif" }}>
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-[oklch(0.5_0.03_250)] leading-relaxed mb-4">{post.excerpt}</p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {post.tags.map((tag) => (
+                            <span key={tag} className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[oklch(0.72_0.14_200/0.08)] text-[oklch(0.55_0.12_200)]">
+                              <Tag size={10} />
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                        <span className="inline-flex items-center gap-1 text-sm font-medium text-[oklch(0.72_0.14_200)] group-hover:gap-2 transition-all duration-300">
+                          閱讀全文 <ArrowRight size={14} />
+                        </span>
                       </div>
-                      <span className="inline-flex items-center gap-1 text-sm font-medium text-[oklch(0.72_0.14_200)] group-hover:gap-2 transition-all duration-300">
-                        閱讀全文 <ArrowRight size={14} />
-                      </span>
-                    </div>
-                  </article>
-                </Link>
+                    </article>
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>

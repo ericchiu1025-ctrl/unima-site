@@ -4,9 +4,26 @@
  */
 import { motion } from "framer-motion";
 import { Link, useParams } from "wouter";
-import { ArrowLeft, ArrowRight, Clock, Tag, Share2, Facebook, Linkedin } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, Tag, Share2, Facebook, Linkedin, ExternalLink } from "lucide-react";
 
-const blogContent: Record<string, { title: string; date: string; readTime: string; tags: string[]; content: string[] }> = {
+const blogContent: Record<string, { title: string; date: string; readTime: string; tags: string[]; content: string[]; externalUrl?: string }> = {
+  "manager-today-erp-to-ai-leader": {
+    title: "從ERP顧問到AI領導者！凱渥科技如何用 AI 重塾決策節奏，帶領團隊走向策略升級之路",
+    date: "2025-12-20",
+    readTime: "10 分鐘",
+    tags: ["經理人月刊", "AI 領導力", "數位轉型"],
+    externalUrl: "https://www.managertoday.com.tw/articles/view/71391",
+    content: [
+      "當生成式AI席捲全球的此刻，焦慮感似乎成為了許多管理者的共同語言。從ChatGPT到各種自動化工具，技術的迭代速度遠超乎想像。然而，對於凱渥科技總經理丘中岳來說，這場AI浪潮帶來的並非恐慌，而是一次重新定義公司價值的契機。",
+      "作為一位在ERP（企業資源規劃）領域深耕多年的資深專家，丘中岳曾任職於台灣最大的鼎新電腦與全球ERP龍頭SAP原廠。六年前他創立了凱渥科技，致力於為企業提供數位轉型解決方案。然而，隨著公司步入第六個年頭，他也開始思考一個更深層的問題：除了作為系統供應商，我們還能為客戶創造什麼樣的長遠價值？這個問題的答案，丘中岳在近期一門由經濟部國際貿易署及中華民國對外貿易發展協會打造的《AI決策領導力課程》中，找到了清晰的輪廓。",
+      "「過去我們看AI，很容易陷入工具論的迷思，只想著哪個工具好用、哪個功能可以省錢。」丘中岳坦言，他過去參加過不少坊間實體的AI課程，但多數內容偏向操作技法。直到他接觸了由前Google台灣董事總經理簡立峰主講的AI趨勢策略課程，這個困局才被打破。",
+      "「比起技術教學，簡立峰老師的課程對我來說反而是一個『定錨』的過程，」丘中岳形容。在課程中，簡立峰深入剖析AI的發展脈絡與全球產業佈局，這讓丘中岳意識到AI不僅僅是提升效率的輔助品，更是企業戰略轉型的核心驅動力。他更確立了凱渥科技的新願景，不只是做資訊服務，而是要成為「台灣中小企業的麥肯錫」，利用AI賦能協助台灣隱形冠軍走向國際。",
+      "將願景轉化為行動，是管理者最大的挑戰。丘中岳將課程中所學的趨勢觀點，迅速應用於協助貿易與零售業客戶拓展海外市場。他舉例，過去一家面膜業者若想進軍新加坡市場，可能需要耗費數月進行市場調查。現在，凱渥科技利用AI爬蟲技術結合海關data與公開網站資訊，能迅速為客戶描繪出精準的市場輪廓。「這就像是把過去需要亂槍打鳥的業務開發，變成了精準導彈，」丘中岳解釋。",
+      "除了對外的商業模式創新，AI也深刻改變凱渥科技的內部管理文化。「領導者必須自己先跳下來做，」他笑說，自己是公司裡最早付費訂閱ChatGPT的人。他開始在會議中展示如何用AI快速生成會議摘要、產出高品質的簡報架構，甚至讓工程師看到如何利用AI輔助撰寫API串接程式，大幅縮短開發時間。",
+      "針對企業客戶內部的AI導入，他則建議採取「分眾策略」。丘中岳建議管理者不要急於要求全員轉型，而是先挑選組織中年輕、具備學習熱忱的「種子部隊」先行試點。當這群人利用AI做出具體成果後，自然會形成示範效應，帶動周邊同事跟進。「重點不是強迫大家學工具，而是引發他們心中的『Why』，」丘中岳強調。",
+      "回顧這段學習與轉型的歷程，丘中岳認為政府與貿協提供的這套AI課程平台，就像是一本隨時可查閱的百科全書。在AI時代，領導者不需要是最懂技術的人，但必須是最懂「方向」的人。透過學習，他找到了那顆定錨，也正帶領著凱渥科技與台灣的中小企業，在數位的大航海時代中，自信地駛向全球。",
+    ],
+  },
   "ai-reshaping-sme-decisions": {
     title: "AI 如何改寫中小企業決策？從數據分析到智慧預測的實戰指南",
     date: "2026-03-15",
@@ -143,6 +160,23 @@ export default function BlogPost() {
       <section className="py-16 lg:py-20">
         <div className="container">
           <div className="max-w-3xl mx-auto">
+            {post.externalUrl && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.15 }}
+                className="mb-8 p-4 rounded-lg bg-[oklch(0.82_0.12_85/0.08)] border border-[oklch(0.82_0.12_85/0.2)]"
+              >
+                <p className="text-sm text-[oklch(0.4_0.03_250)] flex items-center gap-2">
+                  <ExternalLink size={14} className="text-[oklch(0.6_0.12_85)] shrink-0" />
+                  本文原載於《經理人月刊》——
+                  <a href={post.externalUrl} target="_blank" rel="noopener noreferrer" className="text-[oklch(0.72_0.14_200)] font-medium hover:underline">
+                    點此閱讀原文
+                  </a>
+                </p>
+              </motion.div>
+            )}
+
             <motion.article
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

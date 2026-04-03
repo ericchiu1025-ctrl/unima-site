@@ -194,10 +194,10 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="mt-12 flex flex-wrap items-center gap-6 text-xs text-[oklch(0.6_0.02_250)]"
             >
-              <div className="flex items-center gap-2">
+              <a href="https://www.managertoday.com.tw/articles/view/71391" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[oklch(0.82_0.12_85)] transition-colors duration-300">
                 <Award size={14} className="text-[oklch(0.82_0.12_85)]" />
                 經理人月刊報導
-              </div>
+              </a>
               <div className="flex items-center gap-2">
                 <Building2 size={14} className="text-[oklch(0.82_0.12_85)]" />
                 TAITRA 合作實績
