@@ -64,13 +64,13 @@ const services = [
   {
     icon: Database,
     title: "營運轉型顧問",
-    desc: "ERP 進銷存、HR 人資、CRM 客戶關係、BI 數據報表，一站式系統規劃與導入。",
+    desc: "ERP 進銷存、HR 人資、CRM 客戶關係、BI 分析、資安方案等，一站式系統規劃與導入。",
     color: "from-[oklch(0.72_0.14_200)] to-[oklch(0.55_0.12_200)]",
   },
   {
     icon: Brain,
     title: "AI 決策領導",
-    desc: "利用生成式 AI 重塑決策節奏，協助企業落實數據導向的智慧決策。",
+    desc: "利用生成式 AI 重塑決策節奏，協助B2B企業落實數據導向的 AI 智慧決策。",
     color: "from-[oklch(0.82_0.12_85)] to-[oklch(0.7_0.1_85)]",
   },
   {
@@ -97,7 +97,7 @@ const stats = [
 const cases = [
   {
     tag: "醫療通路業",
-    title: "ERP 系統與政府 API 整合",
+    title: "ERP 與 多元 API 整合",
     desc: "建置 ERP 並整合衛生署 API，縮短藥品通路溝通成本，成功引進新加坡夥伴入場。",
   },
   {
@@ -200,11 +200,11 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-2">
                 <Building2 size={14} className="text-[oklch(0.82_0.12_85)]" />
-                TAITRA 合作實績
+                客戶合作實績
               </div>
               <div className="flex items-center gap-2">
                 <Users size={14} className="text-[oklch(0.82_0.12_85)]" />
-                BNI 商務聯盟
+                跨業聯盟夥伴
               </div>
             </motion.div>
           </div>

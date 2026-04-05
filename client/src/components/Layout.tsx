@@ -154,7 +154,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   className="h-10 w-auto"
                 />
                 <div>
-                  <div className="text-white font-semibold text-sm">凱渥科技有限公司</div>
+                  <div className="text-white font-semibold text-sm">凱渥科技</div>
                   <div className="text-[oklch(0.72_0.14_200)] text-xs tracking-wider">Unima Inc.</div>
                 </div>
               </div>
