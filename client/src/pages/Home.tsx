@@ -151,7 +151,7 @@ export default function Home() {
             >
               成為中小企業的
               <span className="block text-[oklch(0.72_0.14_200)]">麥肯錫</span>
-              <span className="block text-2xl sm:text-3xl lg:text-4xl mt-2 font-normal text-[oklch(0.82_0.12_85)]">
+              <span className="block text-2xl sm:text-3xl lg:text-4xl mt-2 font-normal text-[oklch(0.82_0.12_85)]" style={{color: '#e86499'}}>
                 協助企業出海
               </span>
             </motion.h1>
@@ -183,7 +183,7 @@ export default function Home() {
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/20 text-white font-semibold hover:bg-white/10 transition-all duration-300"
               >
-                預約免費諮詢
+                預約顧問諮詢
               </Link>
             </motion.div>
 
