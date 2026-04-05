@@ -25,19 +25,19 @@ const values = [
   {
     icon: Compass,
     title: "跨產業經驗深根",
-    desc: "15 年橫跨買賣業、製造業、醫療業、科技業的深厚經驗，讓我們能以全局視角為企業提供最適切的建議。",
+    desc: "15 年橫跨貿易買賣業、製造業、醫療業、科技業的深厚經驗，讓我們能以全局視角為企業提供最適切的建議。",
     accent: "oklch(0.82 0.12 85)",
   },
   {
     icon: Globe,
     title: "Global Partner",
-    desc: "從台灣出發，佈局新加坡、馬來西亞、澳洲等國際市場，為企業搭建跨國商務橋樑。",
+    desc: "從台灣出發，佈局新加坡、香港、馬來西亞、澳洲等國際市場，為企業搭建跨國商務的生意橋樑。",
     accent: "oklch(0.65 0.12 200)",
   },
   {
     icon: Handshake,
     title: "Great Power",
-    desc: "一站式服務的強大整合力。透過 100+ 聯盟夥伴的資源網絡，為客戶提供從 IT 到 OT 的全方位解決方案。",
+    desc: "一站式服務的強大整合力。透過 100+ 聯盟夥伴的資源網絡，為客戶提供從 IT 到 OT 、AI智慧、ERP等的全方位解決方案。",
     accent: "oklch(0.6 0.1 170)",
   },
 ];
@@ -58,7 +58,7 @@ export default function Philosophy() {
               經營理念
             </h1>
             <p className="text-[oklch(0.78_0.02_250)] mt-4 max-w-2xl text-lg">
-              以「成為中小企業的麥肯錫」為願景，協助企業出海，創造永續價值。
+              以「成為中小企業的麥肯錫，協助企業出海」為願景，跟著IT Team Taiwan出海，創造商務的永續價值。
             </p>
           </motion.div>
         </div>
@@ -93,10 +93,10 @@ export default function Philosophy() {
                   <p className="text-2xl lg:text-3xl font-bold text-white leading-relaxed" style={{ fontFamily: "'Playfair Display', 'Noto Serif TC', serif" }}>
                     「成為中小企業的<span className="text-[oklch(0.72_0.14_200)]">麥肯錫</span>，
                     <br className="hidden sm:block" />
-                    協助企業<span className="text-[oklch(0.82_0.12_85)]">出海</span>」
+                    協助企業<span className="text-[oklch(0.82_0.12_85)]" style={{color: '#b47391'}}>出海</span>」
                   </p>
                   <p className="text-[oklch(0.7_0.02_250)] mt-6 text-lg max-w-2xl mx-auto leading-relaxed">
-                    我們相信，每一家中小企業都值得擁有頂級的策略顧問服務。
+                    我們相信，每一家中小企業都值得，擁有優質的策略顧問服務。
                     凱渥科技以麥肯錫等級的專業標準，為中小企業提供可負擔、可落地的數位轉型方案，
                     並協助有野心的企業走向國際舞台。
                   </p>
