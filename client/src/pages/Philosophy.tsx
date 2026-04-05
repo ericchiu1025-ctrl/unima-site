@@ -18,7 +18,7 @@ const fade = {
 const values = [
   {
     icon: Heart,
-    title: "負責任",
+    title: "負責任＆當責",
     desc: "每一個專案都是一份承諾。我們以「生命影響生命」的信念，深耕每一個合作關係，確保客戶的投資獲得最大回報。",
     accent: "oklch(0.72 0.14 200)",
   },
