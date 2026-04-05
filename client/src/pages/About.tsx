@@ -18,7 +18,7 @@ const fade = {
 };
 
 const milestones = [
-  { year: "2010", title: "ERP 顧問起步", desc: "以鼎新 ERP 專業顧問身份踏入企業數位化領域" },
+  { year: "2010", title: "ERP 顧問起步", desc: "以鼎新與 SAP 的專業規劃身份踏入企業數位化領域" },
   { year: "2015", title: "跨產業整合", desc: "累積買賣、製造、醫療等多產業顧問經驗，建立聯盟夥伴網絡" },
   { year: "2019", title: "凱渥科技成立", desc: "正式成立凱渥科技有限公司，提供一站式企業解決方案" },
   { year: "2022", title: "出海策略啟動", desc: "佈局新加坡、馬來西亞等東南亞市場，協助企業跨國發展" },
@@ -27,7 +27,7 @@ const milestones = [
 ];
 
 const strengths = [
-  { icon: Users, title: "100+ 聯盟夥伴", desc: "跨產業的專業聯盟網絡，涵蓋 AI、企業軟體、工廠數位轉型、IT&OT 整合、企業行銷等領域。" },
+  { icon: Users, title: "100+ 聯盟夥伴", desc: "跨產業的聯盟網絡，涵蓋 AI、企業軟體、工廠數位轉型、IT&OT 整合、企業行銷等領域。" },
   { icon: Target, title: "300+ 企業案例", desc: "累積豐富的實戰經驗，從 30 人中小企業到年營收 50 億的集團企業，皆有成功導入紀錄。" },
   { icon: Lightbulb, title: "一站式服務", desc: "從需求評估、方案規劃、系統導入到後續維運，提供完整的企業數位轉型旅程。" },
   { icon: Shield, title: "負責任的承諾", desc: "以「生命影響生命」為座右銘，深耕每一個專案，建立長期信任關係。" },
@@ -70,12 +70,12 @@ export default function About() {
                 創始精神
               </h2>
               <p className="text-[oklch(0.4_0.03_250)] mt-4 leading-relaxed text-lg">
-                凱渥科技的創辦人 Eric Chiu 擁有超過 15 年的企業營運與 ERP 整合經驗。從鼎新 ERP 專業顧問起步，
+                凱渥科技的創辦人 Eric Chiu ， 擁有超過 15 年的企業營運與 ERP 整合經驗。從鼎新 ERP 到外商SAP專業規劃起步，
                 一路深耕買賣業、製造業、醫療業等多元產業，累積了 300 多個企業顧問案例。
               </p>
               <p className="text-[oklch(0.4_0.03_250)] mt-4 leading-relaxed">
-                秉持「生命影響生命」的信念，Eric 不僅是企業的技術顧問，更是企業主的策略夥伴。
-                透過各大 EMBA、創業社群與中小企業總會的深厚人脈，凱渥科技建立了一個超過 100 位跨產業聯盟夥伴的強大網絡，
+                秉持「生命影響生命」的信念，不僅是企業的技術顧問，更是企業主的策略夥伴。
+                透過各大 EMBA、創業社群與企業商會的深厚人脈，凱渥科技建立了一個超過 100 位跨產業聯盟夥伴的強大網絡，
                 為每一位客戶提供最適切的解決方案。
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
@@ -85,7 +85,7 @@ export default function About() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[oklch(0.5_0.03_250)]">
                   <Building2 size={16} className="text-[oklch(0.82_0.12_85)]" />
-                  TAITRA 合作實績
+                  客戶合作實績
                 </div>
               </div>
             </motion.div>
