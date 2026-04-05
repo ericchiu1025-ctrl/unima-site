@@ -87,7 +87,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-bold text-[oklch(0.18_0.04_250)] text-lg">Eric Chiu</h3>
-                      <p className="text-sm text-[oklch(0.5_0.03_250)]">創辦人暨執行長</p>
+                      <p className="text-sm text-[oklch(0.5_0.03_250)]">執行長</p>
                     </div>
                   </div>
                   <p className="text-sm text-[oklch(0.4_0.03_250)] leading-relaxed">
