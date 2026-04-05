@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: ReactNode }) {
               href="/contact"
               className="ml-3 px-5 py-2 text-sm font-semibold rounded-md bg-gradient-to-r from-[oklch(0.72_0.14_200)] to-[oklch(0.65_0.12_200)] text-white shadow-md shadow-[oklch(0.72_0.14_200/0.3)] hover:shadow-lg hover:shadow-[oklch(0.72_0.14_200/0.4)] transition-all duration-300"
             >
-              免費諮詢
+              安排顧問諮詢
             </a>
           </div>
 
@@ -120,7 +120,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   href="/contact"
                   className="mt-2 px-4 py-3 text-sm font-semibold rounded-md bg-gradient-to-r from-[oklch(0.72_0.14_200)] to-[oklch(0.65_0.12_200)] text-white text-center"
                 >
-                  免費諮詢
+                  安排顧問諮詢
                 </a>
               </div>
             </motion.div>
