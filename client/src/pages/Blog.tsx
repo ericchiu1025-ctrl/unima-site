@@ -79,6 +79,48 @@ const posts = [
     readTime: "8 分鐘",
     tags: ["IoT", "智慧製造", "數位轉型"],
   },
+  {
+    slug: "agentic-ai-success-rate-77",
+    title: "2026 企業 AI 新顯學：Agentic AI 如何將成功率從 20% 提升至 77%？",
+    excerpt: "過去企業導入 AI 成功率僅 20%，因為只把它當工具。Stanford 2026 AI Index 揭示：代理型 AI（Agentic AI）崛起，讓成功率飆升至 77%。本文解析這場從『被動工具』到『主動代理』的典範轉移。",
+    date: "2026-04-20",
+    readTime: "8 分鐘",
+    tags: ["Agentic AI", "AI 轉型", "Stanford 報告"],
+    featured: true,
+  },
+  {
+    slug: "ai-supply-chain-revolution-bcg",
+    title: "跨國供應鏈的 AI 革命：BCG 報告指出近 80% 企業以『降本增效』為首要目標",
+    excerpt: "BCG 2026 最新報告揭示，近 80% 的企業導入 AI 是為了解決供應鏈成本問題。但目前只有 13% 的物流供應商真正看到財務回報，關鍵在於流程整合。",
+    date: "2026-04-18",
+    readTime: "9 分鐘",
+    tags: ["供應鏈 AI", "企業出海", "BCG 報告"],
+    featured: true,
+  },
+  {
+    slug: "taiwan-2058-sme-ai-transformation",
+    title: "台灣 2,058 家企業的轉型啟示：中小企業如何掌握 AI 發展黃金期？",
+    excerpt: "經濟部 2026 年最新數據顯示，台灣已有超過 2,000 家企業成功導入 AI，其中高達 91% 是中小企業。秘訣在於善用政府資源加上漸進式導入策略。",
+    date: "2026-04-16",
+    readTime: "7 分鐘",
+    tags: ["中小企業", "AI 轉型", "政府補助"],
+  },
+  {
+    slug: "forrester-2026-physical-ai",
+    title: "Forrester 2026 預測：AI 從『數位螢幕』走向『實體世界』，你的企業準備好了嗎？",
+    excerpt: "Forrester 2026 最新報告指出，AI 正在從數位螢幕全面走向實體世界。從智慧製造的預測性維護到無人搬運車，Physical AI 正在重塑產業面貌。",
+    date: "2026-04-14",
+    readTime: "8 分鐘",
+    tags: ["Physical AI", "Forrester", "智慧製造"],
+  },
+  {
+    slug: "2026-global-ai-governance",
+    title: "2026 全球 AI 治理元年：跨國企業不可不知的『合規競爭力』",
+    excerpt: "隨著歐美各國 AI 監管制度陸續上路，2026 正式進入全球 AI 治理元年。跨國企業在享受 AI 效率的同時，如何將合規轉化為競爭優勢？",
+    date: "2026-04-12",
+    readTime: "9 分鐘",
+    tags: ["AI 治理", "企業出海", "合規競爭力"],
+  },
 ];
 
 export default function Blog() {
