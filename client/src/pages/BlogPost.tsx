@@ -169,7 +169,6 @@ const blogContent: Record<string, { title: string; date: string; readTime: strin
       "建立負責任的 AI 文化，確保跨國營運穩健發展。您的 AI 應用合規嗎？聯繫我們，建立企業專屬的 AI 治理框架！",
     ],
   },
-,
   "ai-agent-delivery-cost-center": {
     title: "AI Agent 不是聊天機器人，它是你未來的交付成本中心",
     date: "2026-05-02",
