@@ -21,7 +21,7 @@ const posts = [
             {
     slug: "gartner-2026-ai",
     title: "Gartner 預測：2026 年中小企業的 AI 競爭策略——領域專用化",
-    excerpt: "在生成式 AI 的競賽中，中小企業如何與資源雄厚的巨頭競爭？Gartner 給出了明確的方向。",
+    excerpt: "Gartner 2026 趨勢指出，AI 專案失敗的主因已非技術，而是「信任稀缺」。企業必須將 AI 治理與品牌成長掛鉤，才能真正實現規模化。",
     date: "2026-05-10",
     readTime: "8 分鐘",
     tags: ["最新洞察", "AI 轉型"],
