@@ -18,7 +18,34 @@ const fade = {
 };
 
 const posts = [
-            {
+  {
+    slug: "agentic-ai-virtual-coworker",
+    title: "Agentic AI：從「工具」到「虛擬同事」，你的企業準備好了嗎？",
+    excerpt: "McKinsey 2025 報告指出，「Agentic AI」時代已臨，AI 將從被動回覆轉為自動規劃與執行。真正的轉型是讓 AI 成為能獨立交付成果的「數位員工」。",
+    date: "2026-06-01",
+    readTime: "8 分鐘",
+    tags: ["Agentic AI", "AI 轉型", "McKinsey"],
+    featured: true,
+  },
+  {
+    slug: "70-20-10-rule-transformation",
+    title: "破解轉型迷思：為什麼 70% 的資源應該花在「人」而非「技術」？",
+    excerpt: "BCG 研究指出，AI 轉型的成功比例中，演算法僅佔 10%，技術佔 20%，剩下的 70% 全在於「人才與流程優化」。買系統最簡單，改腦袋才是最難的事。",
+    date: "2026-06-01",
+    readTime: "7 分鐘",
+    tags: ["BCG", "人才戰略", "數位轉型"],
+    featured: true,
+  },
+  {
+    slug: "decision-intelligence-2027",
+    title: "數據不等於決策：2027 年 50% 的商業決策將由 AI 增強",
+    excerpt: "Gartner 預測到 2027 年，半數商業決策將透過決策智能 (DI) 進行增強。DI 橋接了「數據洞察」與「實際行動」之間的鴻溝。",
+    date: "2026-06-01",
+    readTime: "8 分鐘",
+    tags: ["Gartner", "決策智能", "AI 應用"],
+    featured: true,
+  },
+  {
     slug: "gartner-2026-ai",
     title: "Gartner 預測：2026 年中小企業的 AI 競爭策略——領域專用化",
     excerpt: "Gartner 2026 趨勢指出，AI 專案失敗的主因已非技術，而是「信任稀缺」。企業必須將 AI 治理與品牌成長掛鉤，才能真正實現規模化。",
