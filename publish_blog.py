@@ -51,7 +51,7 @@ def parse_markdown_multi(file_path):
             "slug": slug,
             "excerpt": excerpt,
             "paragraphs": paragraphs,
-            "date": "2026-05-11"
+            "date": datetime.now().strftime("%Y-%m-%d")
         })
     return parsed_posts
 
