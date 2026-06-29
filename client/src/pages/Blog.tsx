@@ -19,6 +19,52 @@ const fade = {
 
 const posts = [
   {
+    slug: "81-percent-ai-experiments-bottom-line",
+    title: "81% 的 AI 實驗都沒賺錢？從「工具存取」轉向「底線收益」的最後一哩路",
+    excerpt: "McKinsey 最新報告揭示，高達 81% 的企業 AI 實驗未能帶來實質財務收益！這不僅是技術問題，更是策略與流程的斷裂。別讓你的 AI 投資變成無底洞。",
+    date: "2026-06-29",
+    readTime: "8 分鐘",
+    tags: ["McKinsey", "AI 決策轉型", "底線收益"],
+    featured: true,
+  },
+  {
+    slug: "multi-agent-system-surge-1445",
+    title: "詢問度激增 1445%！多代理系統 (Multi-agent) 時代來臨，你的企業準備好了嗎？",
+    excerpt: "Gartner 報告指出，企業對「多代理系統」的詢問量激增 1445%！當單一 AI 已無法滿足複雜需求，協作型 AI 代理人正成為企業競爭的新戰場。",
+    date: "2026-06-29",
+    readTime: "7 分鐘",
+    tags: ["Gartner", "多代理系統", "AI 協作"],
+    featured: true,
+  },
+  {
+    slug: "sme-digital-gap-global-expansion",
+    title: "數位鴻溝警報：大型企業 AI 採用率超前，中小企業如何靠「輕量化 AI」逆襲出海？",
+    excerpt: "歐洲 SME 報告指出大型企業 AI 採用率大幅領先。中小企業無需盲目追逐重資產策略，透過「輕量化 AI」聚焦核心痛點，也能實現敏捷出海逆襲。",
+    date: "2026-06-29",
+    readTime: "8 分鐘",
+    tags: ["集團出海", "中小企業數位化", "輕量化 AI"],
+    featured: true,
+  },
+  {
+    slug: "ai-overloading-middle-managers",
+    title: "AI 正在拖垮你的中層主管？避免數位轉型淪為「管理過載」的診斷書",
+    excerpt: "HBR 研究發現 AI 導入若無配套，會導致中層管理過載。真正的 AI 賦能是讓 AI 成為主管的「智慧副駕」，而非額外負擔。別讓數位轉型淪為管理災難。",
+    date: "2026-06-29",
+    readTime: "9 分鐘",
+    tags: ["HBR", "管理過載", "AI 賦能"],
+    featured: true,
+  },
+  {
+    slug: "retail-ai-spend-double-bcg",
+    title: "零售業 AI 支出將翻倍！BCG 揭秘：為何領先者不再談「概念驗證」，而是談「生產實戰」？",
+    excerpt: "BCG AI Radar 顯示零售業 AI 支出將翻倍。領先企業已將重心轉向「生產實戰」，將技術深度整合至營運流程，創造可衡量的商業效益。",
+    date: "2026-06-29",
+    readTime: "8 分鐘",
+    tags: ["BCG", "零售業 AI", "生產實戰"],
+    featured: true,
+  },
+
+  {
     slug: "agentic-ai-virtual-coworker",
     title: "Agentic AI：從「工具」到「虛擬同事」，你的企業準備好了嗎？",
     excerpt: "McKinsey 2025 報告指出，「Agentic AI」時代已臨，AI 將從被動回覆轉為自動規劃與執行。真正的轉型是讓 AI 成為能獨立交付成果的「數位員工」。",
